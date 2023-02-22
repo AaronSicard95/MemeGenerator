@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <h2 class="poo">PooPoo :)</h2>
+    <form action="" id="memeForm">
+        <label for="imageURL">Image for your Meme:</label>
+        <input type="text" id="imageURL" placeholder="Paste an Image URL Here">
+        <br>
+        <label for="topTextBox">Enter the Top Text for your Meme:</label>
+        <input type="text" id="topTextBox" placeholder="Top Text For Your Meme"/>
+        <br>
+        <label for="topTextColor">Choose a color for The Top Text:</label>
+        <input type="color" id="topTextColor"/>
+        <br>
+        <label for="bottomTextColor">Choose a color for The Bottom Text:</label>
+        <input type="color" id="bottomTextColor"/>
+        <br>
+        <label for="bottomTextBox">Enter the Bottom Text for your Meme:</label>
+        <input type="text" id="bottomTextBox" placeholder="Bottom Text For Your Meme"/>
+        <input type="submit">
+    </form>
     <section>
-    <div id="imageDiv">
+    <div class="imageDiv">
         <div class="textDiv topText">You know? I want you to</div>
         <img src="https://i.natgeofe.com/k/327b01e8-be2e-4694-9ae9-ae7837bd8aea/mallard-male-swimming_4x3.jpg" alt="">
         
         <div class="textDiv bottomText">poop on me and slit my wrists. Make me cum and cry and kill myself</div>
     </div>
+    <script src="script.js"></script>
 </section>
 </body>
 </html>
