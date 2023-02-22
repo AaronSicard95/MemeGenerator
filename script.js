@@ -56,6 +56,12 @@ function submitForm(evt){
     addMeme(imageBox.value, topTextEntry.value, bottomTextEntry.value, topTextColorBox.value, bottomTextColorBox.value, fontSize.value, memeArray.length);
     memeArray.push({iURL: imageBox.value, tt: topTextEntry.value, bt: bottomTextEntry.value, ttc: topTextColorBox.value, btc: bottomTextColorBox.value, fSize: fontSize.value});
     localStorage.setItem("memeArray", JSON.stringify(memeArray));
+    imageBox.value = "";
+    topTextEntry.value = "";
+    bottomTextEntry.value= "";
+    topTextColorBox.value = "";
+    bottomTextColorBox.value = "";
+    fontSize.value = "";
 }
 for(let i = 0; i < memeArray.length; i++){
     addMeme(memeArray[i].iURL, memeArray[i].tt, memeArray[i].bt, memeArray[i].ttc, memeArray[i].btc, memeArray[i].fSize, i)
