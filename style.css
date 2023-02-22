@@ -1,0 +1,31 @@
+div{
+}
+#imageDiv{
+    position: relative;
+}
+.textDiv{
+    position: absolute;
+    left: 0px;
+    width: 1000px;
+    height: 250px;
+    text-align: center;
+    font-size: 3vw;
+    justify-content: center;
+    color: whitesmoke;
+    overflow-wrap: break-word;
+}
+.topText{
+    bottom: 0px;
+    top: 0px;
+
+}
+.bottomText{
+    bottom: 0px;
+    top: 500px;
+    vertical-align: bottom;
+
+}
+img{
+    max-height: 1000px;
+    max-width: 1000px;
+}
